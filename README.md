@@ -20,3 +20,8 @@ Necesitamos un sistema que muestre un mensaje a los empleados sobre cómo debe a
 - Ejercicio individual.
 - Nivel de complejidad: intermedio.
 
+### Diagrama de clases
+
+<p align="center">
+  <img src="https://res.cloudinary.com/dxlipkjcl/image/upload/v1721725176/DH/Backend/Diagram_dhgg9g.png" alt="Diagrama de clases C2" width="700" />
+</p>
