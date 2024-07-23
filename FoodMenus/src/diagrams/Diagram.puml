@@ -1,0 +1,34 @@
+@startuml
+
+abstract class Menu {
+    {abstract} +assemble(): String
+    {abstract} +calculatePrice(): String
+    +assembleAndCalculatePrice(): String
+    +displayInstructions(): String
+}
+
+class ChildMenu {
+    -toysIncluded: int
+    +ChildMenu(toysIncluded: int)
+    +assemble(): String
+    +calculatePrice(): String
+}
+
+class VegetarianMenu {
+    -spiceAmount: int
+    -sauceAmount: int
+    +VegetarianMenu(spiceAmount: int, sauceAmount: int)
+    +assemble(): String
+    +calculatePrice(): String
+}
+
+class ClassicMenu {
+    +assemble(): String
+    +calculatePrice(): String
+}
+
+Menu <|-- ChildMenu
+Menu <|-- VegetarianMenu
+Menu <|-- ClassicMenu
+
+@enduml
